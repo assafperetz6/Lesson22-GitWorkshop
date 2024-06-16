@@ -17,9 +17,8 @@ h1 {
     height: 100px;
     width: 100px;
 
-    margin: auto;
+    margin: 10px auto;
     border-radius: 50%;
-    background-color: steelblue;
 
     align-items: center;
     justify-content: center;
@@ -27,4 +26,12 @@ h1 {
     font-weight: bold;
 
     transition: 1s;
+}
+
+.ball1 {
+    background-color: steelblue;
+}
+
+.ball2 {
+    background-color: rgb(131, 132, 121);
 }
