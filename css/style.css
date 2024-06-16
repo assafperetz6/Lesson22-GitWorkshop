@@ -3,6 +3,7 @@
 }
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
     background-color: black;
 }
 
@@ -12,10 +13,16 @@ h1 {
 
 
 .ball {
+    display: flex;
     height: 100px;
     width: 100px;
 
     margin: auto;
     border-radius: 50%;
     background-color: steelblue;
+
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
 }
