@@ -10,5 +10,6 @@ function onBallClick(el) {
     else {
         el.style.height = el.style.width = `${currBallSize}px`
         el.innerText = currBallSize
+        el.style.backgroundColor = getRandomColor()
     }
 }
