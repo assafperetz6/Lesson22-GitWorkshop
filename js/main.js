@@ -1,7 +1,15 @@
 'use strict'
 
 function onBallClick(el) {
-    var currBallSize = +getComputedStyle(el).height.slice(0, -2);
-    el.style.height = `${currBallSize + 50}px`
-    el.style.width = `${currBallSize + 50}px`
+    var currBallSize = +el.innerText + 50
+
+    if (currBallSize > 400) {
+        el.style.height = el.style.width = `100px`
+        el.innerText = '100'
+    }
+    else {
+        el.style.height = el.style.width = `${currBallSize}px`
+        el.innerText = currBallSize
+    }
+    console.log(currBallSize);
 }
