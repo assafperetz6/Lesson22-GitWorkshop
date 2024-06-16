@@ -1,9 +1,9 @@
 'use strict'
 
-function onBallClick(el) {
+function onBallClick(el, maxDiameter) {
     var currBallSize = +el.innerText + getRandomInt(20, 60)
 
-    if (currBallSize > 400) {
+    if (currBallSize > maxDiameter) {
         el.style.height = el.style.width = `100px`
         el.innerText = '100'
     }
